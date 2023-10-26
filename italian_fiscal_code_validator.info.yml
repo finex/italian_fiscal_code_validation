@@ -1,4 +1,4 @@
-name: Italian Fiscal Code Validation
+name: Italian Fiscal Code Validator
 type: module
 description: Provides a custom validation for italian fiscal code fields.
 package: Custom

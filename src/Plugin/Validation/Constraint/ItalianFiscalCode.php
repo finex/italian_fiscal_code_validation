@@ -3,7 +3,7 @@
 
 <?php
 
-namespace Drupal\italian_fiscal_code_validation\Plugin\Validation\Constraint;
+namespace Drupal\italian_fiscal_code_validator\Plugin\Validation\Constraint;
 
 use Symfony\Component\Validator\Constraint;
 
@@ -12,7 +12,7 @@ use Symfony\Component\Validator\Constraint;
  *
  * @Constraint(
  *   id = "ItalianFiscalCode",
- *   label = @Translation("Matches the pattern of Italian Personal Identificatoin Code", context = "Validation"),
+ *   label = @Translation("Matches the pattern of Italian Personal Identification Code", context = "Validation"),
  * )
  */
 class ItalianFiscalCode extends Constraint {

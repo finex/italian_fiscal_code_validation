@@ -3,7 +3,7 @@
 
 <?php
 
-namespace Drupal\italian_fiscal_code_validation\Plugin\Validation\Constraint;
+namespace Drupal\italian_fiscal_code_validator\Plugin\Validation\Constraint;
 
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidator;

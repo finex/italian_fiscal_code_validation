@@ -2,9 +2,34 @@
 
 * Module description
 Implements the italian fiscal code validation using davidepastore/codice-fiscale PHP library for Drupal 10+ fields.
-
-* Installation and usage
-
+* Installation
+** Add git repository to composer.json
+#+begin_src
+        {
+            "type": "package",
+            "package": {
+                "name": "finex/italian_fiscal_code_validation",
+                "version": "0.4",
+                "type":"drupal-module",
+                "source": {
+                    "url": "https://github.com/finex/italian_fiscal_code_validation.git",
+                    "type": "git",
+                    "reference": "tags/0.4"
+                }
+            }
+        }
+#+end_src
+** Add packages with composer:
+#+begin_src
+composer require "finex/italian_fiscal_code_validation:^0.4"
+composer require "davidepastore/codice-fiscale:0.9.1"
+#+end_src
+** Enable module
+#+begin_src
+drush en -y italian_fiscal_code_validation
+#+end_src
+* Usage
+Currently the module add the custom validation to every field named =field_fiscal_code=.
 * Credits
 - Thanks to Davide Pastore for the PHP library.
 - Thanks to "afagioli" for the example code provided on https://www.drupal.org/project/personal_id/issues/3337283.

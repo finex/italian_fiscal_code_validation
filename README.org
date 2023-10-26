@@ -1,3 +1,10 @@
 #+title: Italian Fiscal Code Validation
 
+* Module description
 Implements the italian fiscal code validation using davidepastore/codice-fiscale PHP library for Drupal 10+ fields.
+
+* Installation and usage
+
+* Credits
+- Thanks to Davide Pastore for the PHP library.
+- Thanks to "afagioli" for the example code provided on https://www.drupal.org/project/personal_id/issues/3337283.

@@ -56,7 +56,7 @@ class ItalianFiscalCodeValidator extends ConstraintValidator {
     }
     else {
       $message = t("Codice Fiscale %trimmed is formally correct", ["%trimmed" => $trimmed]);
-      \Drupal::logger('personal_id')->notice($message);
+      \Drupal::logger('italian_fiscal_code_validator')->notice($message);
       \Drupal::messenger()->addMessage($message, 'status', TRUE);
     }
 

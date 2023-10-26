@@ -1,0 +1,10 @@
+<?php
+
+
+use Drupal\Core\Entity\EntityTypeInterface;
+
+function italian_fiscal_code_validator_entity_bundle_field_info_alter(&$fields, EntityTypeInterface $entity_type, $bundle) {
+  if (!empty($fields['field_fiscal_code'])) {
+    $fields['field_fiscal_code']->addConstraint('ItalianFiscalCode');
+  }
+}

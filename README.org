@@ -1,3 +1,3 @@
 #+title: Italian Fiscal Code Validation
 
-Implements the italian fiscal code validation using davidepastore/codice-fiscale PHP library.
+Implements the italian fiscal code validation using davidepastore/codice-fiscale PHP library for Drupal 10+ fields.

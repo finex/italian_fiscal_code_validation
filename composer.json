@@ -1,0 +1,23 @@
+{
+  "name": "finex/italian_fiscal_code_validation",
+  "type": "drupal-module",
+  "description": "",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://leonardofinetti.it",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Leonardo Finetti (finex)",
+      "homepage": "https://leonardofinetti.it",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://leonardofinetti.it",
+    "source": "https://leonardofinetti.it
+  },
+  "require": {
+    "davidepastore/codice-fiscale": "0.9.1"
+  }
+}

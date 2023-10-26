@@ -14,10 +14,10 @@
     }
   ],
   "require": {
-    "davidepastore/codice-fiscale": "0.9.1"
+    "davidepastore/codice-fiscale": "0.9.0"
   },
   "support": {
     "issues": "https://leonardofinetti.it",
-    "source": "https://leonardofinetti.it
+    "source": "https://leonardofinetti.it"
   }
 }

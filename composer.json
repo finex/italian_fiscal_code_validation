@@ -1,5 +1,5 @@
 {
-  "name": "finex/italian_fiscal_code_validation",
+  "name": "finex/italian_fiscal_code_validator",
   "type": "drupal-module",
   "description": "",
   "keywords": ["Drupal"],

@@ -16,9 +16,14 @@ class ItalianFiscalCodeValidator extends ConstraintValidator {
    */
   public function validate($items, Constraint $constraint) {
 
-    if (!empty($items)) {
-      foreach ($items as $item) {
-        $this->validateString($item->value, $constraint);
+    // Load country and check Italian fiscal code only for IT
+    $entity = $items->getEntity();
+    $address = $entity->get('address')->getValue();
+    if ($address[0]['country_code'] == "IT"){
+      if (!empty($items)) {
+        foreach ($items as $item) {
+          $this->validateString($item->value, $constraint);
+        }
       }
     }
 

@@ -19,7 +19,7 @@ class ItalianFiscalCodeValidator extends ConstraintValidator {
     // Load country and check Italian fiscal code only for IT
     $entity = $items->getEntity();
     $address = $entity->get('address')->getValue();
-    if ($address[0]['country_code'] == "IT"){
+    if (!empty($address) && !empty($address[0]['country_code']) && $address[0]['country_code'] === 'IT') {
       if (!empty($items)) {
         foreach ($items as $item) {
           $this->validateString($item->value, $constraint);
@@ -55,12 +55,13 @@ class ItalianFiscalCodeValidator extends ConstraintValidator {
     //   \Drupal::messenger()->addMessage($message, 'status', TRUE);
     // }
 
-    if ($trimmed !== strtoupper($trimmed)) {
-      $this->context->addViolation($constraint->errorNotCapitalized, [
-        '%value' => $trimmed,
-      ]);
-      return;
-    }
+    // TODO: al momento non mi interessa, eventualmente creare una configurazione per attivarlo se proprio dovesse servire.
+    // if ($trimmed !== strtoupper($trimmed)) {
+    //   $this->context->addViolation($constraint->errorNotCapitalized, [
+    //     '%value' => $trimmed,
+    //   ]);
+    //   return;
+    // }
 
   }
 
